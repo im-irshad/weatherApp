@@ -1,4 +1,4 @@
-const apiKey = "d466c88db1d749bdc7e7977c144a6968";
+const apiKey = "";
 
 const detailDivEl = document.getElementById("detailDiv");
 const formEl = document.getElementById("form");
