@@ -41,14 +41,15 @@ function addToPage(data) {
   <img src="https://openweathermap.org/img/wn/${
     data.weather[0].icon
   }@2x.png" alt="weather foto" />
-  <h3>${ConvertToC(data.main.temp)}</h3>
-  <h4>${data.weather[0].description}</h4>
-  <h4>${ConvertToC(data.main.feels_like)}</h4>
+  <h4>Weather Description: <br> ${data.weather[0].description}</h4>
+  <h3>Temperature ${ConvertToC(data.main.temp)} C</h3>
+  
+  <h4>Feel like Temperature ${ConvertToC(data.main.feels_like)} C</h4>
 </div>
 <div class="otherDetail">
   <ul class="detailList">
-    <li>wind ${data.wind.speed}</li>
-    <li>humidity ${data.main.humidity}</li>
+    <li>wind  ${data.wind.speed}</li>
+    <li>humidity <i class="fas fa-humidity"></i> ${data.main.humidity}</li>
     <li>visibility ${data.visibility}</li>
     <li>pressure ${data.main.pressure}</li>
     <li>DEW point ${data.main.humidity}</li>
